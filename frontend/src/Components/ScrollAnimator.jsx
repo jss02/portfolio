@@ -1,6 +1,12 @@
 import { useRef, useEffect } from 'react'
 
-export default function SlideInLeft({ children }) {
+/*
+Scroll animation wrapper
+
+Give class with initial animation state styling and make sure {animation}-show has the result animation state
+*/
+
+export default function ScrollAnimator({ children, animation, threshold=0.1 }) {
     const elemRef = useRef(null);
 
     useEffect(() => {
@@ -9,12 +15,12 @@ export default function SlideInLeft({ children }) {
         const observer = new IntersectionObserver(
             ([element]) => {
                 if (element.isIntersecting) {
-                    elem.classList.add('slide-in-show');
+                    elem.classList.add(animation + '-show');
                 } else {
-                    elem.classList.remove('slide-in-show')
+                    elem.classList.remove(animation + '-show')
                 }
             }, {
-                threshold: 0.1,
+                threshold: threshold,
             }
         );
 
@@ -30,6 +36,6 @@ export default function SlideInLeft({ children }) {
     }, []);
 
     return (
-        <div ref={elemRef} className="slide-in-left">{children}</div>
+        <div ref={elemRef} className={animation}>{children}</div>
     )
 }

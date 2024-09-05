@@ -1,6 +1,6 @@
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
-import SlideInLeft from "./SlideInLeft";
+import ScrollAnimator from "./ScrollAnimator";
 import UNSWLogo from '../assets/UNSW-logo.png'
 import PHSLogo from '../assets/PHS-logo.gif'
 
@@ -9,7 +9,7 @@ export default function Education() {
         <div className="bg-slate-800 text-white py-24" id="Education">
             <div className="max-w-6xl mx-auto">
                 <h4 className="text-5xl text-center font-bold">Education</h4>
-                <SlideInLeft>
+                <ScrollAnimator animation="slide-in-left">
                     <ExperienceCard 
                     title="UNSW"
                     description="Bachelor of Science (Computer Science)"
@@ -19,9 +19,9 @@ export default function Education() {
                     type="University"
                     img={UNSWLogo}
                     />
-                </SlideInLeft>
+                </ScrollAnimator>
                 
-                <SlideInLeft>
+                <ScrollAnimator animation="slide-in-left">
                     <ExperienceCard
                     title="Parramatta High School"
                     dotPoints={["98.55 ATAR", "Peer Support Training Volunteer (2019)"]}
@@ -30,7 +30,7 @@ export default function Education() {
                     type="Secondary Education"
                     img={PHSLogo}
                     />
-                </SlideInLeft>
+                </ScrollAnimator>
                 
             </div>
             

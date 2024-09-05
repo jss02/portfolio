@@ -2,6 +2,10 @@
  import "../App.css";
 
  function Header() {
+    const scrollToComponent = (element) => {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+    
     return (
         <header className="bg-slate-700 text-white py-5 px-16 fixed w-full z-10">
             <div className="flex justify-between items-center">
@@ -9,11 +13,11 @@
                 <nav>
                     <div className="flex items-center">
                         <ul className="flex flex-row text-xl gap-10">
-                            <li className="cursor-pointer"><a href="#Home" className="hover:bg-blue-500 px-3 py-2 rounded-md">Home</a></li>
-                            <li className="cursor-pointer"><a href="#Education" className="hover:bg-blue-500 px-3 py-2 rounded-md">Education</a></li>
-                            <li className="cursor-pointer"><a href="#Projects" className="hover:bg-blue-500 px-3 py-2 rounded-md">Projects</a></li>
-                            <li className="cursor-pointer"><a className="hover:bg-blue-500 px-3 py-2 rounded-md">Skills</a></li>
-                            <li className="cursor-pointer"><a className="hover:bg-blue-500 px-3 py-2 rounded-md">Contact</a></li>
+                            <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Home'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Home</button></li>
+                            <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Education'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Education</button></li>
+                            <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Projects'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Projects</button></li>
+                            <li className="cursor-pointer"><button className="hover:bg-blue-500 px-3 py-2 rounded-md">Skills</button></li>
+                            <li className="cursor-pointer"><button className="hover:bg-blue-500 px-3 py-2 rounded-md">Contact</button></li>
                         </ul>
                         <div className="ml-10">ds</div>
                     </div>

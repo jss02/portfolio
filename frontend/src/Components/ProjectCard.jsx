@@ -1,6 +1,9 @@
+import ScrollAnimator from './ScrollAnimator'
+
 export default function ProjectCard( {title, description, dotPoints, languages, libraries, link, date, img} ) {
     return (
-        <div className="my-10 flex flex-row justify-between p-5 border-4 border-blue-500 rounded-lg text-l appear">
+        <ScrollAnimator show="expand-show" animation="expand" threshold={0.1}>
+        <div className="my-10 flex flex-row justify-between p-5 border-4 border-blue-500 rounded-lg text-l">
             <div>
                 <h5 className="text-2xl font-bold">{title}</h5>
                 <p className="text-xl">{description}</p>
@@ -22,5 +25,6 @@ export default function ProjectCard( {title, description, dotPoints, languages, 
                 </div>
             </div>
         </div>
+        </ScrollAnimator>
     )
 }
