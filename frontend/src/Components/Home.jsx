@@ -7,8 +7,8 @@ export default function Home() {
     return (
         <div className="bg-slate-900 text-white" id="Home">
             <main className="flex flex-col items-center justify-center h-screen gap-10">
-                <h1 className="text-6xl font-bold">Hi I'm Jerold</h1>
-                <p className="text-3xl">I'm a student🎓 at UNSW studying B Computer Science, set to graduate
+                <h1 className="text-5xl font-bold">Hi I'm Jerold</h1>
+                <p className="text-2xl">I'm a student🎓 at UNSW studying B Computer Science, set to graduate
                     at the end of 2024.
                 </p>
                 <div className="flex flex-row gap-5">
@@ -18,7 +18,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col items-center gap-5">
-                    <h3 className="text-3xl">Find out more about my education, projects, and skills below.</h3>
+                    <h3 className="text-2xl">Find out more about my education, projects, and skills below.</h3>
                     <a className="hover:scale-110 animate-bounce" href="#Education">
                         <svg width="50" height="50" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="32" cy="32" fill="#3B82F6" r="32"/>

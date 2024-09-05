@@ -2,8 +2,8 @@ export default function ExperienceCard({title, description, dotPoints, type, img
     return (
         <div className="my-10 flex flex-row justify-between">
             <div>
-                <h5 className="text-4xl font-bold">{title}</h5>
-                <p className="text-3xl">{description}</p>
+                <h5 className="text-3xl font-bold">{title}</h5>
+                <p className="text-2xl">{description}</p>
                 {dotPoints && dotPoints.length > 0 && (
                     <ul className="marker:text-blue-500 list-disc pl-6">
                         {dotPoints.map((point, index) => (<li key={index} className="text-xl">{point}</li>))}
