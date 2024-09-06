@@ -1,6 +1,8 @@
 import ProjectCard from "./ProjectCard"
 import ReactLogo from '../assets/React-Logo.png'
 import twitterx from '../assets/twitterx.png'
+import bettingIcon from '../assets/betting-icon.jpg'
+import flaskLogo from '../assets/flask-logo.png'
 
 export default function Projects() {
     return (
@@ -26,13 +28,14 @@ export default function Projects() {
                     "Matching events across different bookmakers with fuzzywuzzy"
                 ]}
                 languages={["Python"]}
-                libraries={["Selenium", "BeautifulSoup4", "web-driver-manager, pytest, fuzzywuzzy"]}
+                libraries={["Selenium", "BeautifulSoup4", "webdriver-manager, pytest, fuzzywuzzy"]}
                 link="https://github.com/jss02/Value-betting-software"
                 date="2024"
+                img={bettingIcon}
                 />
                 <ProjectCard
                 title="Twitter Fake News Detection Software"
-                description="Fake news detector plugin for twitter/X using LLMs in a team of 5"
+                description="Fake news detector plugin for twitter/X using LLMs in a team of 5."
                 dotPoints={["Developed software to scrape live website contents of top google search results",
                     "Worked on parsing scraped contents into list of readable strings for model training",
                     "Practiced scrum (agile) framework"
@@ -41,6 +44,20 @@ export default function Projects() {
                 libraries={["BeautifulSoup4", "NewsPlease", "Requests"]}
                 date="2023"
                 img={twitterx}
+                />
+                <ProjectCard
+                title="UNSW Streams messaging app"
+                description="Python backend server for Microsoft Teams replica 'UNSW Streams' in a team of 5."
+                dotPoints={["Developed user authentication and session management with JWT",
+                    "Implemented API endpoints with JWT authentication",
+                    "Built password reset functionality with email reset code using smtplib",
+                    "Created user profile picture upload function and user file management",
+                    "Wrote unit tests for API endpoints with high coverage using pytest"
+                ]}
+                languages={["Python"]}
+                libraries={["Flask", "pytest", "requests", "jwt"]}
+                date="2021"
+                img={flaskLogo}
                 />
             </div>
         </div>
