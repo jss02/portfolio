@@ -11,7 +11,7 @@ export default function Projects() {
                 <h5 className="text-5xl text-center font-bold">Projects</h5>
                 <ProjectCard
                 title="Portfolio website"
-                description="Portfolio website made with React and TailwindCSS."
+                description="Portfolio website made with React and Tailwind CSS."
                 dotPoints={[]}
                 languages={["HTML", "CSS", "JavaScript"]}
                 libraries={[]}
@@ -49,7 +49,7 @@ export default function Projects() {
                 title="UNSW Streams messaging app"
                 description="Python backend server for Microsoft Teams replica 'UNSW Streams' in a team of 5."
                 dotPoints={["Developed user authentication and session management with JWT",
-                    "Implemented API endpoints with JWT authentication",
+                    "Implemented API endpoints featuring JWT authentication",
                     "Built password reset functionality with email reset code using smtplib",
                     "Created user profile picture upload function and user file management",
                     "Wrote unit tests for API endpoints with high coverage using pytest"

@@ -9,6 +9,15 @@
     transform: translate(0, 0);
 }
 
+.slide-up {
+    transition: transform 1s ease-out;
+    transform: translateY(60%);
+}
+
+.slide-up.slide-up-show {
+    transform: translateY(0);
+}
+
 *{
     scroll-behavior: smooth;
 }

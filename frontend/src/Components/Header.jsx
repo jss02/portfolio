@@ -16,7 +16,7 @@
                             <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Home'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Home</button></li>
                             <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Education'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Education</button></li>
                             <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Projects'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Projects</button></li>
-                            <li className="cursor-pointer"><button className="hover:bg-blue-500 px-3 py-2 rounded-md">Skills</button></li>
+                            <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Skills'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Skills</button></li>
                             <li className="cursor-pointer"><button className="hover:bg-blue-500 px-3 py-2 rounded-md">Contact</button></li>
                         </ul>
                         <div className="ml-10">ds</div>
