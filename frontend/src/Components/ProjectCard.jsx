@@ -7,7 +7,7 @@ export default function ProjectCard( {title, description, dotPoints, languages, 
             <div>
                 <h5 className="text-2xl font-bold">{title}</h5>
                 <p className="text-xl">{description}</p>
-                {link && <div>🔗<a href={link} target="_blank" className="underline text-blue-600 visited:text-purple-600">{link}</a></div>}
+                {link && <div>🔗<a href={link} target="_blank" rel='noreferrer' className="underline text-blue-600 visited:text-purple-600">{link}</a></div>}
                 {languages.length > 0 && <p>Languages: {languages.join(', ')}</p>}
                 {libraries.length > 0 && <p>Libraries: {libraries.join(', ')}</p>}
                 {dotPoints && dotPoints.length > 0 && (
