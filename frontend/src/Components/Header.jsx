@@ -1,10 +1,7 @@
- import React from "react";
- import "../App.css";
-
+ import { Link } from 'react-scroll';
+ 
  function Header() {
-    const scrollToComponent = (element) => {
-        element.scrollIntoView({ behavior: 'smooth' });
-    }
+    const links = ["Home", "Education", "Projects", "Skills", "Contact"]
     
     return (
         <header className="bg-slate-700 text-white py-5 px-16 fixed w-full z-10">
@@ -13,18 +10,25 @@
                 <nav>
                     <div className="flex items-center">
                         <ul className="flex flex-row text-xl gap-10">
-                            <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Home'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Home</button></li>
-                            <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Education'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Education</button></li>
-                            <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Projects'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Projects</button></li>
-                            <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Skills'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Skills</button></li>
-                            <li className="cursor-pointer"><button onClick={() => scrollToComponent(document.getElementById('Contact'))} className="hover:bg-blue-500 px-3 py-2 rounded-md">Contact</button></li>
+                            {links.map((link) => (
+                                <li className="cursor-pointer">
+                                    <Link
+                                        to={link}
+                                        activeClass='bg-blue-500'
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-135}
+                                        className="hover:bg-blue-500 px-3 py-2 rounded-md"
+                                    >
+                                    {link}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
-                        <div className="ml-10">ds</div>
+                        <div className="ml-10">Light mode coming soon</div>
                     </div>
                 </nav>
-                
             </div>
-            
         </header>
     )
  }

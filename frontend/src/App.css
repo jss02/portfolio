@@ -17,11 +17,6 @@
 .slide-up.slide-up-show {
     transform: translateY(0);
 }
-
-*{
-    scroll-behavior: smooth;
-}
-
 .expand {
     scale: 0.5;
     opacity: 0;

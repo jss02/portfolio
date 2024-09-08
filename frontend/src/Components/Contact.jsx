@@ -34,9 +34,9 @@ export default function Contact() {
         <div className="bg-slate-900 text-white py-24" id="Contact">
             <div className="max-w-4xl mx-auto">
                 <h5 className="text-5xl text-center font-bold">Contact</h5>
-                <div className="flex justify-between gap-6 my-3">
+                <div className="flex justify-between gap-6 my-6">
                     <div className="w-full">
-                        <p className="text-xl">Feel free to contact me:</p>
+                        <p className="text-xl">Feel free to contact me through this form:</p>
                         {submitted ? (<p>Thanks for reaching out, I'll get back to you shortly</p>) : (
                             <form onSubmit={handleSubmit}>
                                 <div className="my-2">
@@ -86,15 +86,15 @@ export default function Contact() {
                     </div>
                     <div className="w-full flex justify-end">
                         <div>
-                            <div className="flex flex-col items-center my-1">
+                            <div className="flex flex-col items-center my-2">
                                 <h6 className="text-2xl">Email📧</h6>
                                 <p>jeroldshin02@gmail.com</p>
                             </div>
-                            <div className="flex flex-col items-center my-1">
+                            <div className="flex flex-col items-center my-2">
                                 <h6 className="text-2xl">Location📍</h6>
                                 <p>Sydney, Australia</p>
                             </div>
-                            <div className="flex flex-col items-center my-1">
+                            <div className="flex flex-col items-center my-2">
                                 <h6 className="text-2xl">Socials</h6>
                                 <a href='https://github.com/jss02' rel="noreferrer" target="_blank" className="mb-2"><img src={githubLightLogo} className="h-12" alt="github logo"></img></a>
                                 <a href='https://www.linkedin.com/in/jerold-shin' rel="noreferrer" target="_blank"><img src={linkedinLogo} className="h-12" alt="linkedin logo"></img></a>

@@ -10,13 +10,13 @@ import './App.css';
 function App() {
     return (
       <div className="App">
-          <Header></Header>
-          <Home></Home>
-          <Education></Education>
-          <Projects></Projects>
-          <Skills></Skills>
-          <Contact></Contact>
-          <Footer></Footer>
+            <Header></Header>
+            <Home></Home>
+            <Education></Education>
+            <Projects></Projects>
+            <Skills></Skills>
+            <Contact></Contact>
+            <Footer></Footer>
       </div>
     );
 }
