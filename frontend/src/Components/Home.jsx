@@ -1,20 +1,24 @@
 import React from "react";
 import githubLightLogo from '../assets/github-mark-white.png';
+import githubDarkLogo from '../assets/github-mark.png'
 import linkedinLogo from '../assets/LI-In-Bug.png'
 import Resume from '../assets/JSResume.pdf'
 
 export default function Home() {
     return (
-        <div className="bg-slate-900 text-white" id="Home">
+        <div className="bg-slate-50 dark:bg-slate-900" id="Home">
             <main className="flex flex-col items-center justify-center h-screen gap-10">
                 <h1 className="text-5xl font-bold">Hi I'm Jerold</h1>
                 <p className="text-2xl">I'm a student🎓 at UNSW studying B Computer Science, set to graduate
                     at the end of 2024.
                 </p>
                 <div className="flex flex-row gap-5">
-                    <a href='https://github.com/jss02' rel="noreferrer" target="_blank"><img src={githubLightLogo} className="h-16 hover:scale-110" alt="github logo"></img></a>
+                    <a href='https://github.com/jss02' rel="noreferrer" target="_blank">
+                    <img src={githubLightLogo} className="h-16 hover:scale-110 hidden dark:block" alt="github logo white"/>
+                    <img src={githubDarkLogo} className="h-16 hover:scale-110 dark:hidden" alt="github logo"/>
+                    </a>
                     <a href='https://www.linkedin.com/in/jerold-shin' rel="noreferrer" target="_blank"><img src={linkedinLogo} className="h-16 hover:scale-110" alt="linkedin logo"></img></a>
-                    <a href={Resume} target="_blank" rel="noreferrer" className="px-16 py-5 bg-blue-500 hover:scale-110 rounded-lg">Resume</a>
+                    <a href={Resume} target="_blank" rel="noreferrer" className="px-16 py-5 bg-blue-500 hover:scale-110 rounded-lg text-white">Resume</a>
                 </div>
 
                 <div className="flex flex-col items-center gap-5">

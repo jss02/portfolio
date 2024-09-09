@@ -3,7 +3,7 @@ import MousePositionWrapper from "./MousePositionWrapper"
 
 export default function Skills() {
     return (
-        <div className="bg-slate-800 text-white py-24" id="Skills">
+        <div className="bg-white dark:bg-slate-800 py-24" id="Skills">
             <div className="max-w-6xl mx-auto">
                 <h5 className="text-5xl text-center font-bold">Skills</h5>
                 <p className="text-xl my-5">Skills and technologies that I am familiar with:</p>

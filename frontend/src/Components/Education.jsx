@@ -6,7 +6,7 @@ import PHSLogo from '../assets/PHS-logo.gif'
 
 export default function Education() {
     return (
-        <div className="bg-slate-800 text-white py-24" id="Education">
+        <div className=" bg-white dark:bg-slate-800 py-24" id="Education">
             <div className="max-w-6xl mx-auto">
                 <h4 className="text-5xl text-center font-bold">Education</h4>
                 <ScrollAnimator animation="slide-in-left">

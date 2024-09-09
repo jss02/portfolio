@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
     return (
-      <div className="App">
+        <div id='App' className="dark dark:text-white">
             <Header></Header>
             <Home></Home>
             <Education></Education>
@@ -17,7 +17,7 @@ function App() {
             <Skills></Skills>
             <Contact></Contact>
             <Footer></Footer>
-      </div>
+        </div>
     );
 }
 

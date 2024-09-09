@@ -6,7 +6,7 @@ import flaskLogo from '../assets/flask-logo.png'
 
 export default function Projects() {
     return (
-        <div className="bg-slate-900 text-white py-24" id="Projects">
+        <div className="bg-slate-50 dark:bg-slate-900 py-24" id="Projects">
             <div className="max-w-6xl mx-auto">
                 <h5 className="text-5xl text-center font-bold">Projects</h5>
                 <ProjectCard

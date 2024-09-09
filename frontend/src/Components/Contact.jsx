@@ -1,5 +1,6 @@
 import { useState } from "react"
 import githubLightLogo from "../assets/github-mark-white.png"
+import githubDarkLogo from '../assets/github-mark.png'
 import linkedinLogo from "../assets/LI-In-Bug.png"
 import emailjs from '@emailjs/browser';
 
@@ -31,7 +32,7 @@ export default function Contact() {
 
     }
     return (
-        <div className="bg-slate-900 text-white py-24" id="Contact">
+        <div className="bg-slate-50 dark:bg-slate-900 py-24" id="Contact">
             <div className="max-w-4xl mx-auto">
                 <h5 className="text-5xl text-center font-bold">Contact</h5>
                 <div className="flex justify-between gap-6 my-6">
@@ -80,7 +81,7 @@ export default function Contact() {
                                         className="block p-1 text-black border-2 rounded-lg border-gray-300 w-full resize-none"
                                     />
                                 </div>
-                                <button type="submit" className="ml-auto my-3 px-2 py-1 rounded-lg bg-blue-500">Submit</button>
+                                <button type="submit" className="ml-auto my-3 px-2 py-1 rounded-lg bg-blue-500 text-white hover:scale-110">Submit</button>
                             </form>
                         )}
                     </div>
@@ -96,7 +97,10 @@ export default function Contact() {
                             </div>
                             <div className="flex flex-col items-center my-2">
                                 <h6 className="text-2xl">Socials</h6>
-                                <a href='https://github.com/jss02' rel="noreferrer" target="_blank" className="mb-2"><img src={githubLightLogo} className="h-12" alt="github logo"></img></a>
+                                <a href='https://github.com/jss02' rel="noreferrer" target="_blank" className="mb-2">
+                                <img src={githubLightLogo} className="h-12 hidden dark:block" alt="github logo light"></img>
+                                <img src={githubDarkLogo} className="h-12 dark:hidden" alt="github logo"></img>
+                                </a>
                                 <a href='https://www.linkedin.com/in/jerold-shin' rel="noreferrer" target="_blank"><img src={linkedinLogo} className="h-12" alt="linkedin logo"></img></a>
                             </div>
                         </div>
