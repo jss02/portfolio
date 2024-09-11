@@ -11,8 +11,12 @@ export default function Projects() {
                 <h5 className="text-5xl text-center font-bold">Projects</h5>
                 <ProjectCard
                 title="Portfolio website"
-                description="Portfolio website made with React and Tailwind CSS."
-                dotPoints={[""]}
+                description={<a href="https://jeroldshin.vercel.app/" target="_blank" rel='noreferrer' className="underline text-blue-600">https://jeroldshin.vercel.app</a>}
+                dotPoints={["Responsive portfolio website developed with React and Tailwind CSS",
+                    "EmailJS integration for serverless contact form",
+                    "Dark mode feature",
+                    "Deployed on vercel"
+                ]}
                 languages={["HTML", "CSS", "JavaScript"]}
                 libraries={["React", "EmailJS", "react-scroll"]}
                 link="https://github.com/jss02/portfolio"
