@@ -13,7 +13,7 @@ export default function Projects() {
                 title="Portfolio website"
                 description={<a href="https://jeroldshin.vercel.app/" target="_blank" rel='noreferrer' className="underline text-blue-600">https://jeroldshin.vercel.app</a>}
                 dotPoints={["Responsive portfolio website developed with React and Tailwind CSS",
-                    "EmailJS integration for serverless contact form",
+                    "EmailJS integration for serverless emails",
                     "Dark mode feature",
                     "Deployed on vercel"
                 ]}
