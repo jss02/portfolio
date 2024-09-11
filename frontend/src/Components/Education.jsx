@@ -7,7 +7,7 @@ import PHSLogo from '../assets/PHS-logo.gif'
 export default function Education() {
     return (
         <div className=" bg-white dark:bg-slate-800 py-24" id="Education">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-6xl mx-auto px-2 xl:p-0">
                 <h4 className="text-5xl text-center font-bold">Education</h4>
                 <ScrollAnimator animation="slide-in-left">
                     <ExperienceCard 
@@ -20,7 +20,7 @@ export default function Education() {
                     img={UNSWLogo}
                     />
                 </ScrollAnimator>
-                
+                <hr className="md:hidden rounded-lg mx-10 bg-black dark:bg-white"></hr>
                 <ScrollAnimator animation="slide-in-left">
                     <ExperienceCard
                     title="Parramatta High School"

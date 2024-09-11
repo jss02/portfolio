@@ -35,8 +35,8 @@ export default function Contact() {
         <div className="bg-slate-50 dark:bg-slate-900 py-24" id="Contact">
             <div className="max-w-4xl mx-auto">
                 <h5 className="text-5xl text-center font-bold">Contact</h5>
-                <div className="flex justify-between gap-6 my-6">
-                    <div className="w-full">
+                <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-6 my-6">
+                    <div className="lg:w-full">
                         <p className="text-xl">Feel free to contact me through this form:</p>
                         {submitted ? (<p>Thanks for reaching out, I'll get back to you shortly</p>) : (
                             <form onSubmit={handleSubmit}>
@@ -85,8 +85,8 @@ export default function Contact() {
                             </form>
                         )}
                     </div>
-                    <div className="w-full flex justify-end">
-                        <div>
+                    <div className="lg:w-full flex lg:justify-end">
+                        <div className="flex lg:block max-sm:flex-col gap-5">
                             <div className="flex flex-col items-center my-2">
                                 <h6 className="text-2xl">Email📧</h6>
                                 <p>jeroldshin02@gmail.com</p>
@@ -95,8 +95,8 @@ export default function Contact() {
                                 <h6 className="text-2xl">Location📍</h6>
                                 <p>Sydney, Australia</p>
                             </div>
-                            <div className="flex flex-col items-center my-2">
-                                <h6 className="text-2xl">Socials</h6>
+                            <div className="flex lg:flex-col items-center my-2 gap-2 lg:gap-0">
+                                <h6 className="text-2xl">Socials<span className="lg:hidden">:</span></h6>
                                 <a href='https://github.com/jss02' rel="noreferrer" target="_blank" className="mb-2">
                                 <img src={githubLightLogo} className="h-12 hidden dark:block" alt="github logo light"></img>
                                 <img src={githubDarkLogo} className="h-12 dark:hidden" alt="github logo"></img>

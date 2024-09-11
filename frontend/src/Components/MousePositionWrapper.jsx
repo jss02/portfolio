@@ -1,4 +1,5 @@
 // Credit: Josh Comeau https://www.joshwcomeau.com/snippets/react-hooks/use-mouse-position/
+// Unused component
 
 import { useState, useEffect, createContext, useContext } from 'react';
 

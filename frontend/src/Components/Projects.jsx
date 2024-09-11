@@ -12,9 +12,9 @@ export default function Projects() {
                 <ProjectCard
                 title="Portfolio website"
                 description="Portfolio website made with React and Tailwind CSS."
-                dotPoints={[]}
+                dotPoints={[""]}
                 languages={["HTML", "CSS", "JavaScript"]}
-                libraries={[]}
+                libraries={["React", "EmailJS", "react-scroll"]}
                 link="https://github.com/jss02/portfolio"
                 date="2024"
                 img={ReactLogo}

@@ -1,6 +1,6 @@
 import ScrollAnimator from "./ScrollAnimator"
 
-export default function SkillCard({ img, name}) {
+export default function SkillCard({ img, name }) {
     const style = {
         background: 'radial-gradient(ellipse at top, #00ff1b, transparent), radial-gradient(ellipse at bottom, #001bff, transparent)'
     } 
