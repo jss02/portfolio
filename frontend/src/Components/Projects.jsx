@@ -26,9 +26,9 @@ export default function Projects() {
                 <ProjectCard
                 title="Value Betting Software"
                 description="Software that identifies live bookmaker pricings with positive expected value."
-                dotPoints={["Calculating true odds of events using Pinnacle's odds", 
+                dotPoints={["Calculating true odds of outcomes using Pinnacle's odds", 
                     "Scraping dynamic websites with JavaScript-generated API data",
-                    "Parsing html text into dictionaries containing odds, team names, match name, and datetime object of event",
+                    "Parsing html text into dictionaries containing odds, team names, match name, and datetime object of events",
                     "Matching events across different bookmakers with fuzzywuzzy"
                 ]}
                 languages={["Python"]}
@@ -41,7 +41,7 @@ export default function Projects() {
                 title="Twitter Fake News Detection Software"
                 description="Fake news detector plugin for twitter/X using LLMs in a team of 5."
                 dotPoints={["Developed software to scrape live website contents of top google search results",
-                    "Worked on parsing scraped contents into list of readable strings for model training",
+                    "Parsed scraped contents into lists of readable strings for model input",
                     "Practiced scrum (agile) framework"
                 ]}
                 languages={["Python"]}
