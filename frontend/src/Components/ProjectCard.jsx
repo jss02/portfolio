@@ -3,7 +3,7 @@ import ScrollAnimator from './ScrollAnimator'
 export default function ProjectCard( {title, description, dotPoints, languages, libraries, link, date, img} ) {
     return (
         <ScrollAnimator animation="expand" threshold={0.1}>
-        <div className="my-10 mx-5 flex flex-col items-center lg:items-start lg:flex-row justify-between p-5 shadow-lg dark:shadow-slate-950 rounded-lg text-lg">
+        <div className="my-10 mx-5 flex flex-col items-center lg:flex-row justify-between p-5 shadow-lg dark:shadow-slate-950 rounded-lg text-lg">
             <div className='flex flex-col items-center lg:block'>
                 {img && <img className="lg:hidden size-48" src={img} alt='Project logo'></img>}
                 <h5 className="text-2xl font-bold">{title}</h5>
