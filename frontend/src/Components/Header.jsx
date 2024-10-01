@@ -41,13 +41,13 @@ import { Link } from 'react-scroll';
                                         fillRule="evenodd" clipRule="evenodd"></path>
                                 </svg>
                             </button>
-                            <button onClick={() => setToggle(!toggle)} className='lg:hidden text-3xl pb-1'>{toggle ? '❌' : '☰'}</button>
+                            <button onClick={() => setToggle(!toggle)} className='lg:hidden text-3xl pb-1'>{toggle ? '✕' : '☰'}</button>
                         </div>
                     </nav>
                 </div>
             </header>
             {toggle && (
-                <div className='right-5 top-24 fixed bg-cyan-200 dark:bg-indigo-500 p-5 z-50 rounded-xl lg:hidden'>
+                <div className='right-5 top-24 fixed bg-white dark:bg-slate-700 p-5 z-50 rounded-xl lg:hidden'>
                     <ul className="flex flex-col items-center text-xl gap-10 lg:flex w-25">
                         {links.map((link) => (
                             <li className="cursor-pointer">
