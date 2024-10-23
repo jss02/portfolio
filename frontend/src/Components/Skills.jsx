@@ -20,7 +20,7 @@ export default function Skills() {
                     <SkillCard name="Jira" img="https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg"/>
                     <SkillCard name="Node.js" img="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg"/>
                     <SkillCard name="Pytest" img="https://www.vectorlogo.zone/logos/pytest/pytest-icon.svg"/>
-                    <SkillCard name="Flask" img="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg"/>
+                    <SkillCard name="Flask" img="https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-icon~v2.svg"/>
                 </div>
             </div>
         </div>
