@@ -7,8 +7,8 @@ import Resume from '../assets/JSResume.pdf'
 export default function Home() {
     return (
         <div className="bg-slate-50 dark:bg-slate-900" id="Home">
-            <main className="flex flex-col items-center justify-center h-screen gap-10 p-3">
-                <h1 className="text-5xl font-bold">Hi I'm Jerold</h1>
+            <main className="flex flex-col items-center justify-center h-screen p-3 gap-1 sm:gap-4 lg:gap-10">
+                <h1 className="text-5xl font-bold mt-20">Hi I'm Jerold</h1>
                 <p className="text-2xl">I'm a student🎓 at UNSW studying B Computer Science, set to graduate
                     at the end of 2024.
                 </p>
