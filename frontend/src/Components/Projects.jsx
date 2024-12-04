@@ -3,6 +3,8 @@ import ReactLogo from '../assets/React-Logo.png'
 import twitterx from '../assets/twitterx.png'
 import bettingIcon from '../assets/betting-icon.jpg'
 import flaskLogo from '../assets/flask-logo.png'
+import edstemLogo from '../assets/edstem.png'
+import presentation from '../assets/presentation.png'
 
 export default function Projects() {
     return (
@@ -26,16 +28,42 @@ export default function Projects() {
                 <ProjectCard
                 title="Value Betting Software"
                 description="Software that identifies live bookmaker pricings with positive expected value."
-                dotPoints={["Calculating true odds of outcomes using Pinnacle's odds", 
-                    "Scraping dynamic websites with JavaScript-generated API data",
-                    "Parsing html text into dictionaries containing odds, team names, match name, and datetime object of events",
-                    "Matching events across different bookmakers with fuzzywuzzy"
+                dotPoints={["Developed software to scrape live odds of sports events from bookmakers using selenium and BeautifulSoup4", 
+                    "Implemented parsing functionality to convert raw html text into dictionaries containing odds, team names, and datetime objects of events",
+                    "Calculated true odds of events using Pinnacle's odds to find value in other bookmakers' pricings",
+                    "Created robust error handling mechanisms to manage the dynamic issues caused  by changing website structures and content variability"
                 ]}
                 languages={["Python"]}
                 libraries={["Selenium", "BeautifulSoup4", "webdriver-manager, pytest, fuzzywuzzy"]}
                 link="https://github.com/jss02/Value-betting-software"
                 date="2024"
                 img={bettingIcon}
+                />
+                <ProjectCard
+                title="Presentation Maker Frontend"
+                description="React app for making presentations"
+                dotPoints={["Developed a Single Page Application with user authentication, presentation management, and slide customization features",
+                    "Built modular and reusable React components to enhance maintainability and development efficiency",
+                    "Utilized the Axios library for API interactions with backend for CRUD operations",
+                    "Created unit tests for components using Jest and React Testing Library and developed UI tests with Cypress to ensure app functionality and reliability"
+                ]}
+                languages={["JavaScript", "HTML", "CSS"]}
+                libraries={["React", "MaterialUI", "Axios", "Cypress"]}
+                date="2024"
+                img={presentation}
+                />
+                <ProjectCard
+                title="EdStem Forum Replica Frontend"
+                description="Single Page Application for EdStem forum replica in Vanilla JavaScript"
+                dotPoints={["Designed and developed responsive frontend with dynamic DOM manipulation",
+                    "Integrated frontend with RESTful API backend using fetch for asynchronous data handling",
+                    "Implemented key features: User Authentication, Thread management, Comments & replies, User profiles",
+                    "Managed user state and session data with localStorage"
+                ]}
+                languages={["JavaScript", "HTML", "CSS"]}
+                libraries={[]}
+                date="2024"
+                img={edstemLogo}
                 />
                 <ProjectCard
                 title="Twitter Fake News Detection Software"
@@ -51,7 +79,7 @@ export default function Projects() {
                 />
                 <ProjectCard
                 title="UNSW Streams messaging app"
-                description="Python backend server for Microsoft Teams replica 'UNSW Streams' in a team of 5."
+                description="Python backend server for Microsoft Teams replica 'UNSW Streams' in a team of 4."
                 dotPoints={["Developed user authentication and session management with JWT",
                     "Implemented API endpoints featuring JWT authentication",
                     "Built password reset functionality with email reset code using smtplib",

@@ -17,7 +17,7 @@ export default function ProjectCard( {title, description, dotPoints, languages, 
                     </ul>
                 )}
             </div>
-            <div className="flex flex-row text-xl gap-5 items-center">
+            <div className="flex flex-row text-xl gap-5 items-center flex-none">
                 <div className="flex flex-col items-center text-2xl lg:text-lg">
                     {date && <div>{date}</div>}
                 </div>
