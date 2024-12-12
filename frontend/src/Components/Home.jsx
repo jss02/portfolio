@@ -9,7 +9,7 @@ export default function Home() {
         <div className="bg-slate-50 dark:bg-slate-900" id="Home">
             <main className="flex flex-col items-center justify-center h-screen p-3 gap-1 sm:gap-4 lg:gap-10">
                 <h1 className="text-5xl font-bold mt-20">Hi I'm Jerold</h1>
-                <p className="text-2xl">I'm a Bachelor of Computer Science graduate🎓 (2024), from UNSW.
+                <p className="text-2xl">I'm a Bachelor of Computer Science graduate🎓 from UNSW, Class of 2024.
                 </p>
                 <div className="flex flex-row gap-5">
                     <a href='https://github.com/jss02' rel="noreferrer" target="_blank">
