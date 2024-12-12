@@ -13,7 +13,7 @@ export default function Education() {
                     <ExperienceCard 
                     title="UNSW"
                     description="Bachelor of Science (Computer Science)"
-                    dotPoints={["75.27 WAM (Current)", "Academic Achievement Award (AAA) Scholarship"]}
+                    dotPoints={["76.2 WAM", "Academic Achievement Award (AAA) Scholarship"]}
                     startDate="2021"
                     endDate="2024"
                     type="University"
