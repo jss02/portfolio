@@ -24,7 +24,7 @@ export default function Education() {
                 <ScrollAnimator animation="slide-in-left">
                     <ExperienceCard
                     title="Parramatta High School"
-                    dotPoints={["98.55 ATAR", "Peer Support Training Volunteer (2019)"]}
+                    dotPoints={["98.55 ATAR", "Peer Support Training Volunteer"]}
                     startDate="2015"
                     endDate="2020"
                     type="Secondary Education"
