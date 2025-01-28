@@ -26,7 +26,7 @@ export default function Projects() {
                 img={ReactLogo}
                 />
                 <ProjectCard
-                title="Value Betting Software"
+                title="Arbitrage Betting Software"
                 description="Software that identifies live bookmaker pricings with positive expected value."
                 dotPoints={["Developed software to scrape live odds of sports events from bookmakers using selenium and BeautifulSoup4", 
                     "Implemented parsing functionality to convert raw html text into dictionaries containing odds, team names, and datetime objects of events",
