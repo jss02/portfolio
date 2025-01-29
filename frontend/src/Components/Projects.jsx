@@ -5,12 +5,28 @@ import bettingIcon from '../assets/betting-icon.jpg'
 import flaskLogo from '../assets/flask-logo.png'
 import edstemLogo from '../assets/edstem.png'
 import presentation from '../assets/presentation.png'
+import nrlLogo from '../assets/nrl-logo.png'
 
 export default function Projects() {
     return (
         <div className="bg-slate-50 dark:bg-slate-900 py-24" id="Projects">
             <div className="max-w-6xl mx-auto">
                 <h5 className="text-5xl text-center font-bold">Projects</h5>
+                <ProjectCard
+                title="NRL.com Data Scraper"
+                description="Web scraper that extracts data and stats from NRL.com"
+                dotPoints={[" Implemented web scraper that extracts match details, team statistics, and player statistics from NRL.com",
+                    "Designed and developed PostgreSQL storage solution for match data",
+                    "Developed bulk scraping functionality to retrieve match data for multiple seasons or rounds",
+                    "Addressed content variability through adaptive parsing by identifying potential missing data points and assigning appropriate default values"
+                ]}
+                languages={["Python"]}
+                libraries={["BeautifulSoup4", "requests", "psycopg2"]}
+                link="https://github.com/jss02/NRL-scraper"
+                date="2025"
+                img={nrlLogo}
+                />
+                
                 <ProjectCard
                 title="Portfolio website"
                 description={<a href="https://jeroldshin.vercel.app/" target="_blank" rel='noreferrer' className="underline text-blue-600">https://jeroldshin.vercel.app</a>}
