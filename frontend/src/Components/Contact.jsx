@@ -94,12 +94,11 @@ export default function Contact() {
                                 <p>Sydney, Australia</p>
                             </div>
                             <div className="flex lg:flex-col items-center my-2 gap-2 lg:gap-0">
-                                <h6 className="text-2xl">Socials<span className="lg:hidden">:</span></h6>
+                                <h6 className="text-2xl">Github<span className="lg:hidden">:</span></h6>
                                 <a href='https://github.com/jss02' rel="noreferrer" target="_blank" className="mb-2">
                                 <img src={githubLightLogo} className="h-12 hidden dark:block" alt="github logo light"></img>
                                 <img src={githubDarkLogo} className="h-12 dark:hidden" alt="github logo"></img>
                                 </a>
-                                <a href='https://www.linkedin.com/in/jerold-shin' rel="noreferrer" target="_blank"><img src={linkedinLogo} className="h-12" alt="linkedin logo"></img></a>
                             </div>
                         </div>
                     </div>
