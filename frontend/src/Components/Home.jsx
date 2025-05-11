@@ -1,7 +1,6 @@
 import React from "react";
 import githubLightLogo from '../assets/github-mark-white.png';
 import githubDarkLogo from '../assets/github-mark.png'
-import linkedinLogo from '../assets/LI-In-Bug.png'
 import Resume from '../assets/JSResume.pdf'
 
 export default function Home() {
@@ -9,8 +8,9 @@ export default function Home() {
         <div className="bg-slate-50 dark:bg-slate-900" id="Home">
             <main className="flex flex-col items-center justify-center h-screen p-3 gap-1 sm:gap-4 lg:gap-10">
                 <h1 className="text-5xl font-bold mt-20">Hi I'm Jerold</h1>
-                <p className="text-2xl">I'm a Bachelor of Computer Science graduate🎓 from UNSW, Class of 2024.
+                <p className="text-2xl">Current Junior Full Stack Developer working with .NET (C#), Vue.js, and React.js
                 </p>
+                <p className="text-xl">🎓2024 Bachelor of Science (Computer Science) graduate from UNSW</p>
                 <div className="flex flex-row gap-5">
                     <a href='https://github.com/jss02' rel="noreferrer" target="_blank">
                     <img src={githubLightLogo} className="h-16 hover:scale-110 hidden dark:block" alt="github logo white"/>

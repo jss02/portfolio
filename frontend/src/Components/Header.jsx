@@ -17,8 +17,8 @@ import { Link } from 'react-scroll';
                     <nav>
                         <div className="flex items-center">
                             <ul className="flex-row text-xl gap-10 hidden lg:flex">
-                                {links.map((link) => (
-                                    <li className="cursor-pointer">
+                                {links.map((link, index) => (
+                                    <li className="cursor-pointer" key={index}>
                                         <Link
                                             to={link}
                                             activeClass='bg-blue-500 text-white'

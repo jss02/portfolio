@@ -15,7 +15,7 @@ export default function Experience() {
                     dotPoints=
                     {[
                         "Developed responsive and interactive frontend components from Figma designs using HTML, CSS, JavaScript, and jQuery.", 
-                        "Built API endpoints within Razor Page Models to handle data operations and server-side logic in ASP.NET.",
+                        "Built API endpoints within Razor Page Models to handle data operations and server-side logic in ASP.NET (C#).",
                         "Refactored and maintained existing codebase by organizing functionality into reusable partial pages and backend objects.",
                         "Debugged, validated, and manually tested front-end and back-end functionalities to ensure accurate behavior and seamless integration"
                     ]}
