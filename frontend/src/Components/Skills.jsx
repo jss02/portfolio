@@ -2,9 +2,9 @@ import SkillCard from "./SkillCard"
 
 export default function Skills() {
     return (
-        <div className="bg-white dark:bg-slate-800 py-24" id="Skills">
+        <div className="bg-slate-50 dark:bg-slate-900 py-24" id="Skills">
             <div className="max-w-6xl mx-auto px-2 xl:px-0 text-center">
-                <h5 className="text-5xl text-center font-bold">Skills</h5>
+                <h5 className="text-5xl text-center font-bold">💻Skills</h5>
                 <p className="text-xl my-5">Skills and technologies that I am familiar with:</p>
                 <div className="flex flex-wrap justify-center xl:justify-start gap-4">
                     <SkillCard name="Python" img="https://www.vectorlogo.zone/logos/python/python-icon.svg"/>

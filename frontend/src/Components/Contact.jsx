@@ -32,9 +32,9 @@ export default function Contact() {
 
     }
     return (
-        <div className="bg-slate-50 dark:bg-slate-900 py-24" id="Contact">
+        <div className="bg-white dark:bg-slate-800 py-24" id="Contact">
             <div className="max-w-4xl mx-auto">
-                <h5 className="text-5xl text-center font-bold">Contact</h5>
+                <h5 className="text-5xl text-center font-bold">✉️Contact</h5>
                 <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-6 my-6">
                     <div className="lg:w-full">
                         <p className="text-xl">Feel free to contact me through this form:</p>
@@ -49,7 +49,6 @@ export default function Contact() {
                                         name="name"
                                         value={formInput.name}
                                         onChange={handleInput}
-                                        placeholder="Name"
                                         required
                                         className="p-1 text-black border-2 rounded-lg border-gray-300"
                                     />
@@ -63,7 +62,6 @@ export default function Contact() {
                                         name="email"
                                         value={formInput.email}
                                         onChange={handleInput}
-                                        placeholder="example@email.com"
                                         required
                                         className="p-1 text-black border-2 rounded-lg border-gray-300"
                                     />

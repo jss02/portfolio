@@ -2,7 +2,7 @@
 import { Link } from 'react-scroll';
  
  function Header() {
-    const links = ["Home", "Education", "Projects", "Skills", "Contact"]
+    const links = ["Home", "Experience", "Education", "Projects", "Skills", "Contact"]
     const [toggle, setToggle] = useState(false);
 
     const toggleDarkMode = () => {

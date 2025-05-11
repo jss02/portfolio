@@ -9,9 +9,9 @@ import nrlLogo from '../assets/nrl-logo.png'
 
 export default function Projects() {
     return (
-        <div className="bg-slate-50 dark:bg-slate-900 py-24" id="Projects">
+        <div className="bg-white dark:bg-slate-800 py-24" id="Projects">
             <div className="max-w-6xl mx-auto">
-                <h5 className="text-5xl text-center font-bold">Projects</h5>
+                <h5 className="text-5xl text-center font-bold">🧩Projects</h5>
                 <ProjectCard
                 title="NRL.com Data Scraper"
                 description="Web scraper that extracts data and stats from NRL.com"

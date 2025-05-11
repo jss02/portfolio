@@ -1,6 +1,6 @@
 export default function ExperienceCard({title, description, dotPoints, type, img, startDate, endDate}) {
     return (
-        <div className="my-10 flex flex-col md:flex-row justify-between gap-5 items-center md:items-start ">
+        <div className="my-10 flex flex-col md:flex-row justify-between gap-5 items-center">
             <div className="flex flex-col items-center md:block">
                 <h5 className="text-3xl font-bold">{title}</h5>
                 <p className="text-2xl">{description}</p>
